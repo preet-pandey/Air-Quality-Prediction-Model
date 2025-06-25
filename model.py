@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import warnings
-import time
 from collections import OrderedDict
 from sklearn.preprocessing import MinMaxScaler, LabelEncoder
 from sklearn.decomposition import PCA
