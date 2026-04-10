@@ -8,7 +8,7 @@ import numpy as np
 model = joblib.load("aqi_random_forest_model.pkl")
 scaler = joblib.load("scaler.pkl")  # comment out if not used
 
-# Default PCA values (PC4–PC13)
+# Default PCA values (PC4-PC13)
 default_values = {
     'PC4': -1.23,
     'PC5': 0.56,
@@ -58,8 +58,8 @@ iface = gr.Interface(
         gr.Textbox(label="Predicted AQI"),
         gr.Textbox(label="AQI Category")
     ],
-    title="🌍 AQI Predictor App",
-    description="Enter PC1–PC3 values to get predicted AQI and its environmental category using Random Forest."
+    title="AQI Predictor App",
+    description="Enter PC1-PC3 values to get predicted AQI and its environmental category using Random Forest."
 )
 
 iface.launch()

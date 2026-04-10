@@ -77,8 +77,8 @@ def train_and_evaluate_rf(df):
     rmse = np.sqrt(mean_squared_error(y_test, y_pred))
     r2 = r2_score(y_test, y_pred)
 
-    print(f"Random Forest → R²: {r2:.3f}, RMSE: {rmse:.2f}")
-    logging.info(f"Random Forest Evaluation → R²: {r2:.3f}, RMSE: {rmse:.2f}")
+    print(f"Random Forest -> R2: {r2:.3f}, RMSE: {rmse:.2f}")
+    logging.info(f"Random Forest Evaluation -> R2: {r2:.3f}, RMSE: {rmse:.2f}")
 
 if __name__ == "__main__":
     df = load_data()
